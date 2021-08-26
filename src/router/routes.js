@@ -21,6 +21,11 @@ const ListaAdministracion = () => import(/* webpackChunkName: "common" */ "@/pag
 
 const routes = [
   {
+  path: '/login',
+  name: 'login',
+  component: Login
+},
+  {
     path: "/",
     component: DashboardLayout,
     redirect: "/login",
@@ -84,11 +89,6 @@ const routes = [
         path: 'administradores/new',
         name: 'NewAdmin',
         component: NewAdmin
-      },
-      {
-        path: 'login',
-        name: 'login',
-        component: Login
       },
       {
         path: 'listaAdministracion',
